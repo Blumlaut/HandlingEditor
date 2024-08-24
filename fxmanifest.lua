@@ -7,6 +7,7 @@ description 'Vehicle handling editor'
 
 client_scripts {
     "@ScaleformUI_Lua/ScaleformUI.lua",
+    'xmlparser.lua',
     'client.lua',
     'config.lua'
 }
