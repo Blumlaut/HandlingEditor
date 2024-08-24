@@ -132,25 +132,3 @@ exportedHandlingVariables = {
 		}}
 	}}
 }
-
-
-function prepareHandlingVariables(tbl)
-    local descriptions = {}
-
-    local function traverse(subtbl)
-        for _, v in ipairs(subtbl) do
-            if v.desc then
-                table.insert(descriptions, { name = v.name, desc = v.desc })
-            elseif v.data and type(v.data) == "table" then
-                traverse(v.data)
-            end
-        end
-    end
-
-    traverse(tbl)
-    return descriptions
-end
-
-handlingVariables = prepareHandlingVariables(exportedHandlingVariables)
-
-print(json.encode(handlingVariables))
