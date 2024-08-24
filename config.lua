@@ -50,8 +50,8 @@ exportedHandlingVariables = {
 	{name = "strDamageFlags", desc = "Flags defining the vehicle's damage attributes."},
 
 
-	{_name = "SubHandlingData", data = {
-		{_name = "Item", type="CFlyingHandlingData", data = {
+	{name = "SubHandlingData", data = {
+		{name = "Item", type="CFlyingHandlingData", data = {
 			{name = "fThrust", desc = "Thrust applied by the vehicle's propulsion system."},
 			{name = "fThrustFallOff", desc = "Fall-off rate of the thrust."},
 			{name = "fThrustVectoring", desc = "Vectoring of thrust for improved control."},
@@ -89,8 +89,8 @@ exportedHandlingVariables = {
 		}}
 	}},
 
-	{_name = "SubHandlingData", data = {
-		{_name = "Item", type="CCarHandlingData", data = {
+	{name = "SubHandlingData", data = {
+		{name = "Item", type="CCarHandlingData", data = {
 			{name = "fBackEndPopUpCarImpulseMult", desc = "Multiplier for impulse at the rear end of the vehicle when popped up."},
 			{name = "fBackEndPopUpBuildingImpulseMult", desc = "Multiplier for impulse at the rear end when colliding with buildings."},
 			{name = "fBackEndPopUpMaxDeltaSpeed", desc = "Maximum speed delta for rear end pop-up."},
@@ -107,8 +107,8 @@ exportedHandlingVariables = {
 		}}
 	}},
 
-	{_name = "SubHandlingData", data = {
-		{_name = "Item", type="CBikeHandlingData", data = {
+	{name = "SubHandlingData", data = {
+		{name = "Item", type="CBikeHandlingData", data = {
 			{name = "fLeanFwdCOMMult", desc = "Multiplier for forward lean center of mass."},
 			{name = "fLeanFwdForceMult", desc = "Multiplier for forward lean force."},
 			{name = "fLeanBakCOMMult", desc = "Multiplier for backward lean center of mass."},
